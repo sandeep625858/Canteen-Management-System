@@ -1,0 +1,68 @@
+/*-----------------------------ADD MENU ----------------------------------*/
+.feedbackcard{
+    margin: 7%;
+    width: 65%;
+}
+.feedheader{
+    background-color: rgb(124, 5, 67);
+}
+.feedsubmit{
+    background-color: rgb(124, 5, 67);
+    color: white;
+}
+.feedcomment
+{
+    height: 10vh;
+}
+.additem{
+	text-align:center;
+}
+.additembutton{
+	background-color:rgb(124, 5, 67);
+	color:white;
+}
+/*-----------------------------UPDATE MENU ----------------------------------*/
+.menuheader{
+	margin-top:3%;
+}
+.menutable{
+	margin: 0 auto;
+	position:relative;
+	width:70%;
+}
+.menutablehead{
+	background-color: rgb(124, 5, 67);
+	color:white;
+}
+.menutablebody{
+	background-color: rgb(255,255,255,0.9);
+}
+.heading{
+	padding-left:3%;
+	padding-right:3%;
+	padding-bottom:1%;
+	padding-top:1%;
+}
+.menucard{
+    margin-left: 7%;
+    width: 65%;
+}
+/*-----------------------------DELETE MENU ----------------------------------*/
+.second{
+	text-align:center;
+	margin-top:5%;
+}
+/*-----------------------------REPORT ----------------------------------*/
+.report{
+	
+	margin-top:3%;
+	text-align:center;
+}
+.exportitem{
+	text-align:center;
+	width:35%;
+	height:140%;
+	background-color:rgb(124, 5, 67);
+	color:white;
+	font-size:larger;
+}

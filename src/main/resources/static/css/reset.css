@@ -1,0 +1,14 @@
+.resetcard{
+    width:35%;
+    margin:0 auto;
+    position:relative;
+    margin-top: 10% !important;
+}
+
+.resetpwd{
+    background-color: rgb(124, 5, 67);
+}
+.submitbtn{
+    text-align: center;
+}
+

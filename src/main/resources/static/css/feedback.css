@@ -1,0 +1,40 @@
+/*-----------------------------USER FEEDBACK----------------------------------*/
+.feedbackcard{
+    margin: 7%;
+    width: 85%;
+}
+.feedheader{
+    background-color: rgb(124, 5, 67);
+}
+.feedsubmit{
+    background-color: rgb(124, 5, 67);
+    color: white;
+}
+.feedcomment
+{
+    height: 10vh;
+}
+/*-----------------------------ADMIN FEEDBACK----------------------------------*/
+.adfeedhead{
+    text-align: center;
+    margin: 4%;
+}
+.adfeedtable{
+    border: 2px solid white;
+}
+.feedtable{
+    background-color: rgb(124, 5, 67);
+}
+.feedtablebody{
+	background-color: rgb(255,255,255,0.9);
+}
+/*-----------------------------THANK YOU ----------------------------------------*/
+.thankyoucard{
+    margin-top:20%;
+    background-color: rgb(255,255,255,0.9);
+    border: 2px solid rgb(184, 60, 124);;
+}
+.thankyoubutton{
+    background-color: rgb(83, 5, 45);
+    color: white;
+}

@@ -1,0 +1,159 @@
+
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Place Your Order Here</title>
+    <link rel="stylesheet" href="/css/template.css">
+    <link rel="stylesheet" href="/css/orderCss.css" type="text/css">
+</head>
+
+<body>
+    <!---------------------------------------------TOP NAVBAR-------------------------------------------------->
+    <div>
+        <nav class="topnav navbar navbar-expand-sm">
+            <!-- Image and text -->
+            <nav class="navbar navbar-light bg-light">
+                <a class="navbar-brand" href="/user/
+                ">
+                    <img src="/images/logo.png" width="90" height="30" class="d-inline-block align-top" alt=""
+                        loading="lazy">
+                    NRI Fintech
+                </a>
+            </nav>
+
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item">
+                    <a href="#"><i id="icon" onclick="openFullscreen();" class="fas fa-expand-arrows-alt fa-2x"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/logout">
+                        Logout
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!------------------------------------------------MAIN-------------------------------------------------->
+    <div class="mainbody">
+		<h3>Place Your Order Here, To Optout For Specific Date Just
+			Select The Date and Submit</h3>
+		<form class="form">
+			<table id="table">
+				<tr class="secheader">
+					<td>
+					<label>Food Category:</label>
+					<span th:if="${preference == 'Veg'}">
+					<select name="category" id="category">
+						<option value="Veg">Veg</option>
+						<option value="default">All</option>
+						<option value="Nonveg">Non-Veg</option>
+					</select>
+					</span>
+					<span th:if="${preference == 'Nonveg'}">
+					<select name="category" id="category">
+						<option value="Nonveg">Non-Veg</option>
+						<option value="default">All</option>
+						<option value="Veg">Veg</option>
+					</select>
+					</span>
+					</td>
+
+					<td>
+					<label>Meal:</label>
+					<select name="meal" id="meal">
+						<option value="default">All</option>
+						<option value="Breakfast">Breakfast</option>
+						<option value="Lunch">Lunch</option>
+					</select>
+					</td>
+					<td></td>
+					<td></td>
+					<td><input type="text" placeholder="Search.." id="searchBar" onkeyup="filterFunc()"></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<th class="idClass">FoodId</th>
+					<th>FoodName</th>
+					<th>mealType</th>
+					<th>foodType</th>
+					<th>Price</th>
+					<th>Quantity</th>
+					<th>Select</th>
+				</tr>
+
+				<tr th:each="temp: ${foodMenu}">
+					<td th:text="${temp.foodId}"></td>
+					<td th:text="${temp.foodName}"></td>
+					<td th:text="${temp.meal}"></td>
+					<td th:text="${temp.category}"></td>
+					<td class="price" th:text="${temp.foodPrice}"></td>
+					<td><button type="button" class="minus" onclick="minus(this)">
+							<i class="fa-solid fa-minus"></i>
+						</button>
+						<input type="text" class="quantity" value="1">
+					<button type="button" class="plus" onclick="plus(this)">
+							<i class="fa-solid fa-plus"></i>
+						</button></td>
+					<td><input type="checkbox" class="select"
+						th:price="${temp.foodPrice}" th:value="${temp.FoodId}"></td>
+				</tr>
+
+				<tr class="last">
+					<td></td>
+					<td><label for="mealDate">Date of Meal: </label></td>
+					<td><input type="date" id="selectdate" name="mealDay" required></td>
+					<td><input type="submit" class="button" value="Submit"></td>
+					<td><input type="reset" class="button" value="reset"></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+		</form>
+	<script src="https://kit.fontawesome.com/f75dc8e629.js"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+	<script src="/js/orderJs.js"></script>
+	<script src="/js/search.js"></script>
+    </div>
+    <!-- --------------------------------------------FOOTER-------------------------------------------------------->
+    <div class="footer">
+        <p>Copyright &copy; 2023 NRI Fintech. All rights reserved.</p>
+    </div>
+
+
+
+    <!--------------------------------- Optional JavaScript; choose one of the two! ----------------->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+    <script src="../js/topnav.js"></script>
+</body>
+
+</html>

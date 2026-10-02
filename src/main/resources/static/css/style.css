@@ -1,0 +1,336 @@
+/*---------------------------------------MAIN---------------------------------------------*/
+html {
+    scroll-behavior: smooth;
+  }
+  .main
+{
+    background-image: url("../images/back.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+body{
+	
+
+	overflow-x: hidden;
+}
+/*---------------------------------------MAIN---------------------------------------------*/
+.mainbody{
+    background-image: url("../images/back.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 79vh;
+}
+/*---------------------------------------CAROUSEL---------------------------------------------*/
+.carousel-inner{
+    height:80vh;
+  }
+  .carcontent
+  {
+    position: absolute;
+    z-index: 20;
+    color: white;
+    text-align: center;
+    margin-top: 15%;
+    text-align: center;
+    left: 0;
+    right: 0;
+    font-size: 3.8rem;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-weight: bolder;
+ 
+  }
+  #carouselExampleControls{
+  	margin-bottom:5%;
+  }
+/*----------------------------------------LOGIN SECTION-------------------------------------------*/
+.loginimg
+{
+    width: 100%;
+    height: 100%;
+}
+.login
+{
+    background-color: rgba(255, 255, 255, 0.822);
+    padding: 3%;
+    margin-left: 4%;
+}
+.register
+{
+    background-color: rgb(124, 5, 67) !important;
+
+}
+.loginsec
+{
+    color: rgb(124, 5, 67);
+}
+.loginbtn
+{
+    background-color: rgb(124, 5, 67) !important;
+}
+/*--------------------------------------------MODAL-----------------------------------------*/
+
+/*---------------------------------------SERVICES-------------------------------------------*/
+.services
+{
+    margin-top: 2%;
+}
+.services h2
+{
+    color: rgb(124, 5, 67);
+}
+.serviceimg
+{
+    margin-top: 1%;
+    width: 100%;
+    height: 100%;
+}
+.keycontent li
+{
+    list-style: none;
+    padding:4%;
+    border-left:2px solid rgb(161, 0, 83);
+    color: rgb(37, 0, 19);
+    font-size:17px;
+    text-align: left;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    box-shadow: 0px 3px 20px 0px rgba(0,0,0,0.2);
+}
+/*--------------------------------------------FOOTER----------------------------------------*/
+footer
+{
+    background-color: black;
+    padding:50px;
+    margin-top:5%;
+}
+footer .pages
+{
+    text-align: center;
+}
+footer .pages h3
+{
+    color: rgb(255, 226, 243);
+    font-size: 20px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; 
+    padding: 5px;
+    font-weight: bold;
+}
+footer .pages a
+{
+    text-decoration: none;
+    margin:10px;
+    color: rgba(255, 226, 243, 0.808);
+    font-size: 15px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; 
+}
+footer .pages a:hover
+{
+    color:white;
+}
+footer .doc
+{
+    text-align: center;
+}
+footer .doc h3
+{
+    color: rgb(255, 226, 243);
+    font-size: 20px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    padding: 5px;
+    font-weight: bold;
+}
+footer .doc a
+{
+    text-decoration: none;
+    margin:10px;
+    color: rgba(255, 226, 243, 0.808);
+    font-size: 15px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+footer .doc a:hover
+{
+    color:white;
+}
+footer .social
+{
+    text-align: center;
+}
+footer .social h3
+{
+    color: rgb(255, 226, 243);
+    font-size: 20px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    padding: 5px;
+    font-weight: bold;
+}
+footer .contact
+{
+    text-align: center;
+}
+footer .contact h3
+{
+    color: rgb(255, 226, 243);
+    font-size: 20px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    padding: 5px;
+    font-weight: bold;
+}
+footer .social a
+{
+    font-size: 30px;
+    text-decoration: none;;
+    color:rgba(247, 193, 224, 0.904);
+    margin:10px;
+}
+footer .social a:hover
+{
+    color:white;
+}
+footer .contact a
+{
+    font-size: 30px;
+    text-decoration: none;;
+    color:rgba(247, 193, 224, 0.904);
+    margin:10px;
+}
+footer .contact a:hover
+{
+    color:white;
+}
+footer p
+{
+    color:rgba(247, 178, 217, 0.726);
+}
+.footerhr
+{
+    border-color: rgba(247, 178, 217, 0.726);
+}
+
+/*------------------------------------------USER DASHBOARD----------------------------------------*/
+/*------------------------------------------TOP NAVBAR----------------------------------------*/
+.topnav
+{
+    background-color: whitesmoke;
+}
+.topnav a{
+    color: rgb(124, 5, 67) !important;
+    text-decoration: none !important;
+}
+.topnav li{
+    margin: 3%;
+}
+
+/*------------------------------------------SIDE NAVBAR----------------------------------------*/
+.sidenav{
+    background-color: rgb(124, 5, 67);
+    height: 78vh;
+    width: 100%;
+}
+.menu{
+    text-decoration: none !important;
+    color: rgb(255, 226, 243) !important;
+    padding: 5%;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-weight: bold;
+    border-top: 1.5px solid rgb(167, 92, 131) ;
+}
+.nav-pills .nav-link:hover {
+    background-color:  rgb(58, 7, 33);
+    transition-duration: 0.5s;
+}
+.nav-pills .nav-link.active {
+    background-color:  rgb(58, 7, 33);
+}
+.usericon{
+    text-align: center;
+    color: rgb(255, 226, 243);;
+    background-color: rgb(58, 7, 33);
+}
+.useridmenu
+{
+    border-top: none !important;
+}
+
+
+.dashboardfooter p{
+	
+    height: 10vh;
+    color: rgb(255, 226, 243);
+    padding-top: 2px;
+    text-align: center;
+    background-color: black;
+}
+/*------------------------------------------DASHBOARD----------------------------------------*/
+.left
+{
+    background-image: url("../images/back.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.maincontent{
+    display: flex;
+    justify-content: center; align-items: center;
+}
+/*-------------------------------------------  USER------------------------------------------*/
+.usercard{
+    border-radius: 50%;
+    padding: 4%;
+    background-color: rgb(83, 5, 45); 
+    color:  white;
+    margin: 3%;
+}
+.usercard:hover{
+    transition-duration: 0.5s;
+    border-radius: 45%;
+    color:  rgb(83, 5, 45);
+    padding: 4%;
+    background-color: white;
+    box-shadow: 10px 10px 10px 10px rgba(83, 5, 45, 0.479);
+}
+.usercard:not(:hover){
+    transition-duration: 1s;
+}
+/*---------------------------------------RESET PASSWORD--------------------------------------*/
+.resetcard{
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    box-shadow: 5px 5px 5px 5px #a18181b7;
+    background-color: rgb(255, 248, 253) !important;
+}
+.resetpwd{
+    background-color: rgb(83, 5, 45);
+}
+.resetlink{
+    color:  rgb(83, 5, 45);
+}
+/*------------------------------------------ADMIN DASHBOARD----------------------------------------*/
+.admin{
+    font-size: 150%;
+}
+.adminleft
+{
+    background-image: url("../images/back4.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.adminicon{
+    margin-right: 5%;
+}
+
+.dashboardfooter{
+  position: fixed;
+  width: 100%;
+  bottom: 0 !important;
+  left: 0;
+  height:10vh;
+}
+
+

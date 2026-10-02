@@ -1,0 +1,31 @@
+  .main
+{
+    background-image: url("images/back.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+.mainbody{
+    background-image: url("../images/back.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.footer p{
+    height: 10vh;
+    color: rgb(255, 226, 243);
+    padding-top: 2px;
+    text-align: center;
+    background-color: black;
+    
+    position:fixed;
+    left:0;
+    bottom:0;
+    width:100%;
+	scroll-behavior: smooth;
+}

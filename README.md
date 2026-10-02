@@ -262,7 +262,3 @@ These are suggested improvements rather than features documented in the original
 **Canteen Management System — NRI FinTech Internship Project**
 
 Contributed to a team-developed canteen management web application built with Java 11, Spring Boot, Spring Security, Hibernate/JPA, Oracle, Thymeleaf and Bootstrap. Personally developed user-side food viewing and ordering, order payment, and user/admin profile update functionality. Worked with Spring Boot, SQL, JavaScript, Bootstrap, Thymeleaf and JPA repositories, while troubleshooting filtering logic and Thymeleaf integration issues.
-
-## Note on Source Code
-
-If this project was developed as part of an employer internship, confirm that you have permission before publishing company-owned source code, internal assets, credentials, or proprietary material in a public repository. A project description, architecture overview, and screenshots can still be used in a portfolio when permitted.
